@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="/money (1).png" alt="money-img" class="money-img">
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the currency and the amount to get the exchange rate</p>
+
+    <div class="container">
+        <div class="currency">
+            <select id="first_currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="CHF">CHF</option>
+                <option value="CAD">CAD</option>
+                <option value="AUD">AUD</option>
+                <option value="CNY">CNY</option>
+                <option value="INP">INP</option>
+                <option value="RUB">RUB</option>
+                <option value="BRL">BRL</option>
+                <option value="ZAR">ZAR</option>
+                <option value="GMD" selected>GMD</option>
+                <option value="MXN">MXN</option>
+                <option value="SGD">SGD</option>
+                <option value="NZD">NZD</option>
+                <option value="KRW">KRW</option>
+                <option value="TRY">TRY</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="CFA">CFA</option>
+            </select>
+           <input type="number" id="first_amount" placeholder="0" value="1">
+        </div>
+
+        <div class="swap-rate-container">
+            <button class="btn" id="swap">
+                convert
+            </button>
+            <div class="rate" id="rate"></div>
+        </div>
+
+
+
+        <div class="currency">
+            <select id="second_currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="CHF">CHF</option>
+                <option value="CAD">CAD</option>
+                <option value="AUD">AUD</option>
+                <option value="CNY">CNY</option>
+                <option value="INP">INP</option>
+                <option value="RUB">RUB</option>
+                <option value="BRL">BRL</option>
+                <option value="ZAR">ZAR</option>
+                <option value="GMD">GMD</option>
+                <option value="MXN">MXN</option>
+                <option value="SGD">SGD</option>
+                <option value="NZD">NZD</option>
+                <option value="KRW">KRW</option>
+                <option value="TRY">TRY</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="CFA" selected>CFA</option>
+            </select>
+            <h1 id="second_amount"></h1>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
